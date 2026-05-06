@@ -1,0 +1,96 @@
+body {
+    background: #a6d2e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    width: 600px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.labelinput {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.labelinput label {
+    width: 160px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+input[type="text"]:not(.ccode),
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],select, textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.nameclass {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+
+.phone-box {
+    display: flex;
+    flex: 1;
+}
+
+.ccode {
+    width: 50px;
+    text-align: center;
+    background: #e9ecef;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+.num {
+    flex: 1;
+    border-radius: 0 5px 5px 0;
+}
+
+
+ .department {
+     margin: 8px 0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 100px;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}

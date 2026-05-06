@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Registration Form</h1>
+
+        <form>
+
+            <div class="labelinput">
+                <label>Roll Number</label>
+                <input type="text" required>
+            </div>
+
+            <div class="labelinput">
+                <label>Student Name</label>
+                <div class="nameclass">
+                    <input type="text" placeholder="First Name" pattern="[A-Za-z]+" required>
+                    <input type="text" placeholder="Last Name" pattern="[A-Za-z]+" required>
+                </div>
+            </div>
+
+            <div class="labelinput">
+                <label>Father's Name</label>
+                <input type="text" pattern="[A-Za-z ]+" required>
+            </div>
+
+            <div class="labelinput">
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+
+            <div class="labelinput">
+                <label>Mobile Number</label>
+                <div class="phone-box">
+                    <input type="number" value="91" readonly class="ccode">
+                    <input type="tel" pattern="[0-9]{10}" required class="num" placeholder="10-digit number">
+                </div>
+            </div>
+
+            <div class="labelinput">
+                <label>Email Address</label>
+                <input type="email" required>
+            </div>
+
+            <div class="labelinput">
+                <label>Password</label>
+                <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+                    title="Must include uppercase, lowercase, number, and special character" required>
+            </div>
+
+            <div class="labelinput">
+                <label>Gender</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender" required> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </div>
+
+            <div class="labelinput">
+                <label>Department</label>
+                <div class="department">
+                    <label><input type="radio" name="dept" required> CSE</label>
+                    <label><input type="radio" name="dept"> IT</label>
+                    <label><input type="radio" name="dept"> ECE</label>
+                    <label><input type="radio" name="dept"> Civil</label>
+                    <label><input type="radio" name="dept"> Mech</label>
+                </div>
+            </div>
+
+            <div class="labelinput">
+                <label>Course</label>
+                <select required>
+                    <option value="">Select Course</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>M.Tech</option>
+                </select>
+            </div>
+
+            <div class="labelinput">
+                <label>Student Photo</label>
+                <input type="file" accept="image/*" required>
+            </div>
+
+            <div class="labelinput">
+                <label>City</label>
+                <input type="text" required>
+            </div>
+
+            <div class="labelinput">
+                <label>Address</label>
+                <textarea rows="3" required></textarea>
+            </div>
+
+            <div class="btn">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

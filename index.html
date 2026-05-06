@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        background: #dfe8f1;
+    }
+
+    .loginform {
+        width: 500px;
+        margin: 80px auto;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        border: 2px solid black;
+        background: #ffffff;
+    }
+
+    input {
+        width: 70%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    button {
+        width: 75%;
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        margin-top: 10px;
+        background: #4da6ff;
+    }
+
+    button:hover {
+        background: #3399ff
+    }
+
+    .footer {
+        margin: 30px;
+        font-size: 15px;
+    }
+
+    a {
+        color: rgb(97, 199, 233);
+    }
+</style>
+
+<body>
+
+    <div class="loginform">
+        <h1 class="heading">Login </h1>
+        <form>
+
+            <input type="text" placeholder="CodeHim" pattern="[A-Za-z ]+" required>
+            <input type="email" placeholder="Email Address" required>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="footer">
+            <footer>Not a member? <a href="registration.html">Create Account</a></footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
